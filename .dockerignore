@@ -1,0 +1,6 @@
+.git
+.tools
+archives
+.cursor
+**/.DS_Store
+game/build

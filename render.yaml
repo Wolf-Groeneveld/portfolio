@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: portfolio
+    runtime: docker
+    plan: free
+    envVars:
+      - key: SQLITE_PATH
+        value: /var/www/html/database/portfolio.sqlite

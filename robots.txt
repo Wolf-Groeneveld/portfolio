@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /includes/
+Disallow: /database/
+Disallow: /archives/
+Disallow: /game/
