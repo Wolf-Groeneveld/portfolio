@@ -186,7 +186,14 @@ require __DIR__ . '/includes/header.php';
                 <a href="mailto:<?= htmlspecialchars(SITE_EMAIL) ?>"><?= htmlspecialchars(SITE_EMAIL) ?></a>.</p>
         <?php endif; ?>
 
-        <form action="contact.php" method="post" class="contact-form">
+        <?php
+            $contactNext = 'https://' . ($_SERVER['HTTP_HOST'] ?? 'wolfgroeneveld.nl') . '/index.php?sent=1#contact';
+        ?>
+        <form action="https://formsubmit.co/<?= htmlspecialchars(SITE_EMAIL) ?>" method="post" class="contact-form">
+            <input type="hidden" name="_next" value="<?= htmlspecialchars($contactNext) ?>">
+            <input type="hidden" name="_subject" value="Portfolio contact">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
             <div class="form-row">
                 <label>
                     Naam
@@ -203,7 +210,7 @@ require __DIR__ . '/includes/header.php';
                           placeholder="Hoi Wolf, ik wilde even contact opnemen..."></textarea>
             </label>
             <div class="hp" aria-hidden="true">
-                <label>Website <input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+                <label>Website <input type="text" name="_honey" tabindex="-1" autocomplete="off"></label>
             </div>
             <button type="submit" class="btn btn-primary">Verstuur bericht</button>
         </form>
