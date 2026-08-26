@@ -24,6 +24,11 @@ function db(): ?PDO
                 PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
             ]);
         }
+        try {
+            $pdo->exec("UPDATE projects SET title = 'Sylensial''s Nightmare' WHERE title = 'Sylensials Nightmare'");
+        } catch (PDOException $e) {
+            error_log('project title update skipped: ' . $e->getMessage());
+        }
     } catch (PDOException $e) {
         $failed = true;
         error_log('DB connection failed: ' . $e->getMessage());
