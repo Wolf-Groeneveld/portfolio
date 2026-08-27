@@ -1,0 +1,6 @@
+<IfModule mod_mime.c>
+    AddType application/octet-stream .apk .whl .data
+    AddType application/wasm .wasm
+    AddType application/javascript .js
+    AddType text/x-python .py
+</IfModule>

@@ -1,4 +1,18 @@
-<html lang="en-us"><script src="https://pygame-web.github.io/archives/0.8/pythons.js" type=module id="site" data-python="cpython3.11" data-os="vtx,fs,snd,gui" async defer>#<!--
+<html lang="en-us"><script>
+(function () {
+    var from = "https://pygame-web.github.io/archives/repo/";
+    var to = "/play/cdn/repo/";
+    var orig = window.fetch.bind(window);
+    window.fetch = function (input, init) {
+        if (typeof input === "string" && input.indexOf(from) === 0) {
+            input = to + input.slice(from.length);
+        } else if (input && input.url && String(input.url).indexOf(from) === 0) {
+            input = new Request(to + String(input.url).slice(from.length), input);
+        }
+        return orig(input, init);
+    };
+})();
+</script><script src="cdn/0.8/pythons.js" type=module id="site" data-python="cpython3.11" data-os="vtx,fs,snd,gui" async defer>#<!--
 
 print("""
 Loading Sylensial's Nightmare from game.apk
@@ -252,10 +266,9 @@ config = {
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes"/>
 
-    <link rel="prefetch" href="https://pygame-web.github.io/archives/0.8/pythonrc.py">
-    <link rel="prefetch" href="https://pygame-web.github.io/archives/0.8/vt/xterm.js">
-    <link rel="prefetch" href="https://pygame-web.github.io/archives/0.8/vt/xterm-addon-image.js">
-    <link rel="prefetch" href="https://pygame-web.github.io/archives/0.8/vt/xterm-addon-image.js">
+    <link rel="prefetch" href="cdn/0.8/pythonrc.py">
+    <link rel="prefetch" href="game.apk">
+    <link rel="prefetch" href="cdn/repo/pkg/pygame_static-1.0-cp311-cp311-wasm32_bi_emscripten.whl">
 
 
     <link rel="icon" type="image/png" href="favicon.png" sizes="16x16">
@@ -318,7 +331,7 @@ config = {
         }
     </style>
 
-    <script src="https://pygame-web.github.io/archives/0.8//browserfs.min.js"></script>
+    <script src="cdn/0.8/browserfs.min.js"></script>
 
 </head>
 
@@ -380,7 +393,7 @@ frameborder="1"
                 mozallowfullscreen="true"
                 sandbox="allow-same-origin allow-top-navigation allow-scripts allow-pointer-lock"
                 allow="autoplay; fullscreen *; geolocation; microphone; camera; midi; monetization; xr-spatial-tracking; gamepad; gyroscope; accelerometer; xr; cross-origin-isolated"
-                src="https://pygame-web.github.io/archives/0.8/empty.html"
+                src="cdn/0.8/empty.html"
                 scrolling="yes">
             </iframe>
         </div>
@@ -408,9 +421,26 @@ frameborder="1"
         var start = document.getElementById("clickstart")
         if (start) {
             start.onclick = function () {
-                start.remove()
+                start.textContent = "Spel wordt geladen…"
+                start.style.cursor = "wait"
+                start.disabled = true
                 var c = document.getElementById("canvas")
                 if (c) c.focus()
+                var n = 0
+                var t = setInterval(function () {
+                    n += 1
+                    var transfer = document.getElementById("transfer")
+                    if (transfer && transfer.hidden) {
+                        start.remove()
+                        clearInterval(t)
+                    } else if (n > 240) {
+                        start.textContent = "Spel kon niet laden. Vernieuw de pagina."
+                        start.style.cursor = "pointer"
+                        start.disabled = false
+                        start.onclick = function () { location.reload() }
+                        clearInterval(t)
+                    }
+                }, 250)
             }
         }
     }
