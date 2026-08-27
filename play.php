@@ -49,7 +49,8 @@
         <p class="play-hints">Klik/Enter = start &nbsp;·&nbsp; Spatie = wave starten &nbsp;·&nbsp; G = gokken &nbsp;·&nbsp; Esc/rechtsklik = annuleren</p>
     </div>
     <?php $gameVersion = @filemtime(__DIR__ . '/play/index.html') ?: time(); ?>
-    <iframe class="play-frame" src="play/index.html?v=<?= $gameVersion ?>" allow="autoplay; fullscreen" title="Sylensial's Nightmare"></iframe>
+    <p class="play-hints" style="padding: 12px 24px;">Spel openen…</p>
 </div>
+<script>location.replace("play/index.html?v=<?= $gameVersion ?>");</script>
 </body>
 </html>
