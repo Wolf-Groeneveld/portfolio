@@ -338,6 +338,40 @@ config = {
 <body>
     <a href="/index.php#projects" style="position:fixed;z-index:10000;top:12px;left:12px;color:#f4f4f6;text-decoration:none;font:500 14px Inter,system-ui,sans-serif;background:rgba(0,0,0,.65);padding:8px 12px;border-radius:8px;">← Portfolio</a>
     <button type="button" id="clickstart" style="position:fixed;inset:0;z-index:40;border:0;background:#090b10;color:#f4f4f6;font:600 22px Inter,system-ui,sans-serif;cursor:pointer;">Klik om Sylensial's Nightmare te starten</button>
+    <script>
+    (function () {
+        var start = document.getElementById("clickstart")
+        if (!start) return
+        start.dataset.bound = "1"
+        start.addEventListener("click", function () {
+            window.__playClicked = true
+            start.textContent = "Spel wordt geladen…"
+            start.style.cursor = "wait"
+            start.disabled = true
+            var c = document.getElementById("canvas")
+            if (c) c.focus()
+        })
+        var n = 0
+        var t = setInterval(function () {
+            if (!document.getElementById("clickstart")) {
+                clearInterval(t)
+                return
+            }
+            n += 1
+            var transfer = document.getElementById("transfer")
+            if (window.__playClicked && transfer && transfer.hidden) {
+                start.remove()
+                clearInterval(t)
+            } else if (n > 360) {
+                start.textContent = "Spel kon niet laden. Vernieuw de pagina."
+                start.style.cursor = "pointer"
+                start.disabled = false
+                start.onclick = function () { location.reload() }
+                clearInterval(t)
+            }
+        }, 250)
+    })()
+    </script>
 
     <div id="transfer" align=center>
 <!--        <div class="spinner" id='spinner'></div> -->
@@ -418,31 +452,8 @@ frameborder="1"
         system.hidden = true
         info.hidden = true
         box.hidden = true
-        var start = document.getElementById("clickstart")
-        if (start) {
-            start.onclick = function () {
-                start.textContent = "Spel wordt geladen…"
-                start.style.cursor = "wait"
-                start.disabled = true
-                var c = document.getElementById("canvas")
-                if (c) c.focus()
-                var n = 0
-                var t = setInterval(function () {
-                    n += 1
-                    var transfer = document.getElementById("transfer")
-                    if (transfer && transfer.hidden) {
-                        start.remove()
-                        clearInterval(t)
-                    } else if (n > 240) {
-                        start.textContent = "Spel kon niet laden. Vernieuw de pagina."
-                        start.style.cursor = "pointer"
-                        start.disabled = false
-                        start.onclick = function () { location.reload() }
-                        clearInterval(t)
-                    }
-                }, 250)
-            }
-        }
+        var c = document.getElementById("canvas")
+        if (c) c.focus()
     }
 
     function custom_prerun(){
