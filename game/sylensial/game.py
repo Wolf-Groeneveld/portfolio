@@ -32,16 +32,17 @@ class Game:
     def __init__(self, fullscreen=True):
         pygame.init()
         pygame.display.set_caption("Sylensial's Nightmare - Part One")
-        if sys.platform == "emscripten":
+        in_browser = sys.platform in ("emscripten", "wasi")
+        if in_browser:
             self.display = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
             self.scale = 1.0
             self.scaled_size = (SCREEN_WIDTH, SCREEN_HEIGHT)
             self.offset = (0, 0)
+        elif fullscreen:
+            self.display = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
+            self._compute_scale()
         else:
-            if fullscreen:
-                self.display = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
-            else:
-                self.display = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
+            self.display = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
             self._compute_scale()
         self.screen = pygame.Surface((SCREEN_WIDTH, SCREEN_HEIGHT))
         self.clock = pygame.time.Clock()
@@ -63,22 +64,35 @@ class Game:
         self.offset = ((dw - self.scaled_size[0]) // 2, (dh - self.scaled_size[1]) // 2)
 
     def _load_fonts(self):
-        serif = "georgia,timesnewroman,serif"
-        sans = "segoeui,arial,sans"
+        from pathlib import Path
+
+        fonts_dir = Path(__file__).resolve().parent.parent / "fonts"
+        serif_b = fonts_dir / "LibreBaskerville-Bold.ttf"
+        sans_r = fonts_dir / "SourceSans3-Regular.ttf"
+        sans_b = fonts_dir / "SourceSans3-Bold.ttf"
+
+        def ttf(path, size):
+            try:
+                if path.is_file():
+                    return pygame.font.Font(str(path), size)
+            except Exception:
+                pass
+            return pygame.font.Font(None, size)
+
         return {
-            "mega": pygame.font.SysFont(serif, 56, bold=True),
-            "big": pygame.font.SysFont(serif, 30, bold=True),
-            "display": pygame.font.SysFont(serif, 44, bold=True),
-            "banner": pygame.font.SysFont(serif, 18, bold=True),
-            "title": pygame.font.SysFont(sans, 26, bold=True),
-            "h1": pygame.font.SysFont(sans, 24, bold=True),
-            "h2": pygame.font.SysFont(sans, 16, bold=True),
-            "brand": pygame.font.SysFont(sans, 19, bold=True),
-            "stat": pygame.font.SysFont(sans, 28, bold=True),
-            "body": pygame.font.SysFont(sans, 17),
-            "small": pygame.font.SysFont(sans, 13),
-            "label": pygame.font.SysFont(sans, 11, bold=True),
-            "micro": pygame.font.SysFont(sans, 11),
+            "mega": ttf(serif_b, 56),
+            "big": ttf(serif_b, 30),
+            "display": ttf(serif_b, 44),
+            "banner": ttf(serif_b, 18),
+            "title": ttf(sans_b, 26),
+            "h1": ttf(sans_b, 24),
+            "h2": ttf(sans_b, 16),
+            "brand": ttf(sans_b, 19),
+            "stat": ttf(sans_b, 28),
+            "body": ttf(sans_r, 17),
+            "small": ttf(sans_r, 13),
+            "label": ttf(sans_b, 11),
+            "micro": ttf(sans_r, 11),
         }
 
     def reset(self):

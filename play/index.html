@@ -293,16 +293,15 @@ config = {
 
         canvas.emscripten {
             border: 0;
-            background: #090b10;
-            width: min(100vw, calc(100vh * 16 / 9));
-            height: min(100vh, calc(100vw * 9 / 16));
+            background: #14161c;
+            width: 100% !important;
+            height: 100% !important;
             z-index: 5;
             padding: 0;
             margin: 0;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            position: fixed;
+            inset: 0;
+            object-fit: contain;
         }
 
         #transfer {
@@ -325,6 +324,7 @@ config = {
 
 <body>
     <a href="/index.php#projects" style="position:fixed;z-index:10000;top:12px;left:12px;color:#f4f4f6;text-decoration:none;font:500 14px Inter,system-ui,sans-serif;background:rgba(0,0,0,.65);padding:8px 12px;border-radius:8px;">← Portfolio</a>
+    <button type="button" id="clickstart" style="position:fixed;inset:0;z-index:40;border:0;background:#090b10;color:#f4f4f6;font:600 22px Inter,system-ui,sans-serif;cursor:pointer;">Klik om Sylensial's Nightmare te starten</button>
 
     <div id="transfer" align=center>
 <!--        <div class="spinner" id='spinner'></div> -->
@@ -400,15 +400,19 @@ frameborder="1"
     <script type="application/javascript">
 
     async function custom_onload(debug_hidden) {
-        // this is called before anythinh python is loaded
-        // make your js customization here
         console.log(__FILE__, "custom_onload")
-
-        pyconsole.hidden = debug_hidden
-        system.hidden = debug_hidden
-        transfer.hidden = debug_hidden
-        info.hidden = debug_hidden
-        box.hidden =  debug_hidden
+        pyconsole.hidden = true
+        system.hidden = true
+        info.hidden = true
+        box.hidden = true
+        var start = document.getElementById("clickstart")
+        if (start) {
+            start.onclick = function () {
+                start.remove()
+                var c = document.getElementById("canvas")
+                if (c) c.focus()
+            }
+        }
     }
 
     function custom_prerun(){
