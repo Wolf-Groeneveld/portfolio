@@ -6,11 +6,17 @@ Options -Indexes
     RewriteRule ^(README\.md|\.gitignore)$ - [F,L]
 </IfModule>
 
+SetEnvIf Request_URI "^/play/" play_assets
+
 <IfModule mod_headers.c>
     Header set X-Content-Type-Options "nosniff"
-    Header set X-Frame-Options "SAMEORIGIN"
+    Header set X-Frame-Options "SAMEORIGIN" env=!play_assets
     Header set Referrer-Policy "strict-origin-when-cross-origin"
     Header set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+</IfModule>
+
+<IfModule mod_mime.c>
+    AddType application/octet-stream .apk
 </IfModule>
 
 <IfModule mod_deflate.c>
