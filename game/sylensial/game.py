@@ -32,15 +32,18 @@ class Game:
     def __init__(self, fullscreen=True):
         pygame.init()
         pygame.display.set_caption("Sylensial's Nightmare - Part One")
-        # In de browser (pygbag/WebAssembly) bestaat fullscreen niet; het canvas bepaalt de grootte.
         if sys.platform == "emscripten":
-            fullscreen = False
-        if fullscreen:
-            self.display = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
-        else:
             self.display = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
+            self.scale = 1.0
+            self.scaled_size = (SCREEN_WIDTH, SCREEN_HEIGHT)
+            self.offset = (0, 0)
+        else:
+            if fullscreen:
+                self.display = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
+            else:
+                self.display = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
+            self._compute_scale()
         self.screen = pygame.Surface((SCREEN_WIDTH, SCREEN_HEIGHT))
-        self._compute_scale()
         self.clock = pygame.time.Clock()
         self.fonts = self._load_fonts()
         self.level = Level()
