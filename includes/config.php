@@ -1,37 +1,36 @@
 <?php
 
+declare(strict_types=1);
+
 ini_set('display_errors', '0');
 ini_set('log_errors', '1');
 
-function asset(string $path): string
-{
-    $file = dirname(__DIR__) . '/' . ltrim($path, '/');
-    $v = is_file($file) ? filemtime($file) : 1;
-    return $path . '?v=' . $v;
-}
+const SITE_NAME = 'Toos Boerlage';
+const SITE_TITLE = 'Toos Boerlage | Kunst & Originele Schilderijen';
+const SITE_DESCRIPTION = 'Ontdek originele kunstwerken van kunstenares Toos Boerlage. Bekijk de collectie schilderijen en unieke werken online.';
 
-// ---- Persoonlijke info ----
-define('SITE_NAME',      'Wolf Groeneveld');
-define('SITE_TITLE',     'Wolf Groeneveld — Portfoliosite');
-define('SITE_TAGLINE',   'Derdejaars student aan het Grafisch Lyceum.');
-define('SITE_LOCATION',  'Hellevoetsluis, Nederland');
-define('SITE_EMAIL',     'wolfgroeneveld@gmail.com');
-define('GITHUB_URL',     'https://github.com/Wolf-Groeneveld/portfolio');
-define('LINKEDIN_URL',   ''); // leeg = wordt niet getoond
-define('RESUME_PATH',    'assets/img/cv.png');
+const ARTIST_EMAIL = 'info@allesvoorkunst.nl';
+const ARTIST_PHONE_DISPLAY = '0181-323808';
+const ARTIST_PHONE_TEL = '+31181323808';
+const ARTIST_STREET = 'Rijksstraatweg 30';
+const ARTIST_POSTCODE = '3221 KA';
+const ARTIST_CITY = 'Hellevoetsluis';
 
-// ---- Over mij ----
-define('ABOUT_TEXT', <<<'TXT'
-Mijn naam is Wolf Groeneveld en ik ben 18 jaar oud. Ik bouw websites — van de database tot de voorkant.
+const ARTIST_WEBSITES = [
+    ['label' => 'Alles voor Kunst', 'url' => 'https://www.allesvoorkunst.nl'],
+    ['label' => 'Kunstuitleen Hellevoetsluis', 'url' => 'https://www.kunstuitleenhellevoetsluis.nl'],
+];
 
-Ik combineer technische vaardigheden met aandacht voor design en gebruikerservaring. Ik wil sites maken die helder zijn, goed werken en waar een klant écht iets aan heeft.
-
-Op dit moment verdiep ik me in PHP en MySQL. Later wil ik als zzp'er websites maken voor klanten.
-TXT);
-
-// ---- Database ----
 define('DB_HOST', getenv('DB_HOST') ?: '127.0.0.1');
 define('DB_PORT', getenv('DB_PORT') ?: '3306');
 define('DB_NAME', getenv('DB_NAME') ?: 'portfolio');
 define('DB_USER', getenv('DB_USER') ?: 'root');
 define('DB_PASS', getenv('DB_PASS') ?: '');
+
+function asset(string $path): string
+{
+    $file = dirname(__DIR__) . '/' . ltrim($path, '/');
+    $version = is_file($file) ? filemtime($file) : 1;
+
+    return '/' . ltrim($path, '/') . '?v=' . $version;
+}
