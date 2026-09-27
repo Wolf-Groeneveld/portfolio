@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-label="Tijdelijke plaatsaanduiding">
+  <rect width="800" height="1000" fill="#FFF9F0"/>
+  <rect x="56" y="56" width="688" height="888" fill="none" stroke="#E6DFD4" stroke-width="2"/>
+  <text x="400" y="470" text-anchor="middle" font-family="Georgia, serif" font-size="54" fill="#77716B">Beeld volgt</text>
+  <text x="400" y="530" text-anchor="middle" font-family="Georgia, sans-serif" font-size="22" fill="#77716B">Tijdelijke plaatsaanduiding</text>
+</svg>

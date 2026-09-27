@@ -1,17 +1,13 @@
-# Portfolio
+# Toos Boerlage
 
-Mijn site. PHP en MySQL, geen framework.
+Nederlandstalige galerie en webshop, gebouwd met PHP zonder framework.
 
-```
-php -S localhost:8000
-```
-
-Database:
-
-```
-mysql -u root < database/schema.sql
+```bash
+php -S localhost:8000 router.php
 ```
 
-Config: `includes/config.php`.
+De catalogus staat in `includes/catalog.json`. Prijzen, status en teksten zijn daar aan te passen. Afbeeldingen zijn nog een plaatsaanduiding.
 
-Online via Render: New Web Service, deze repo, Docker, Free.
+Apache gebruikt de schone URL’s uit `.htaccess`. Lokaal regelt `router.php` dezelfde paden.
+
+Betaling, formulierverzending en de nieuwsbrief zijn nog niet gekoppeld. Er worden geen bestellingen of betalingen opgeslagen.

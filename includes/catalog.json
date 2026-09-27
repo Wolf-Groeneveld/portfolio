@@ -1,0 +1,720 @@
+[
+  {
+    "id": "13389775",
+    "slug": "bomen-serie-nr-5",
+    "title": "Bomen serie - Nr. 5",
+    "artist": "Toos Boerlage",
+    "price": 1650,
+    "currency": "EUR",
+    "technique": "Mixed Media",
+    "material": "Doek",
+    "dimensionsLabel": "100 × 120 × 4 cm",
+    "year": 2008,
+    "status": "available",
+    "images": [
+      {
+        "src": "assets/img/placeholder.svg",
+        "alt": "Tijdelijke plaatsaanduiding. Het werk Bomen serie - Nr. 5 is hier niet afgebeeld."
+      }
+    ],
+    "description": "Verhuurprijs per maand: € 27,50.",
+    "category": "Bomen serie"
+  },
+  {
+    "id": "13382682",
+    "slug": "bomen-serie-nr-4",
+    "title": "Bomen serie - Nr. 4",
+    "artist": "Toos Boerlage",
+    "price": 175,
+    "currency": "EUR",
+    "technique": "Mixed Media",
+    "material": "Doek",
+    "dimensionsLabel": "40 × 30 × 4 cm",
+    "year": 2008,
+    "status": "available",
+    "images": [
+      {
+        "src": "assets/img/placeholder.svg",
+        "alt": "Tijdelijke plaatsaanduiding. Het werk Bomen serie - Nr. 4 is hier niet afgebeeld."
+      }
+    ],
+    "description": "Verhuurprijs per maand: € 2,92.",
+    "category": "Bomen serie"
+  },
+  {
+    "id": "13382678",
+    "slug": "bomen-serie-nr-3",
+    "title": "Bomen serie - Nr. 3",
+    "artist": "Toos Boerlage",
+    "price": 175,
+    "currency": "EUR",
+    "technique": "Mixed Media",
+    "material": "Doek",
+    "dimensionsLabel": "40 × 30 × 4 cm",
+    "year": 2008,
+    "status": "available",
+    "images": [
+      {
+        "src": "assets/img/placeholder.svg",
+        "alt": "Tijdelijke plaatsaanduiding. Het werk Bomen serie - Nr. 3 is hier niet afgebeeld."
+      }
+    ],
+    "description": "Verhuurprijs per maand: € 2,92.",
+    "category": "Bomen serie"
+  },
+  {
+    "id": "13382675",
+    "slug": "bomen-serie-nr-2",
+    "title": "Bomen serie - Nr. 2",
+    "artist": "Toos Boerlage",
+    "price": 175,
+    "currency": "EUR",
+    "technique": "Mixed Media",
+    "material": "Doek",
+    "dimensionsLabel": "40 × 30 × 4 cm",
+    "year": 2008,
+    "status": "available",
+    "images": [
+      {
+        "src": "assets/img/placeholder.svg",
+        "alt": "Tijdelijke plaatsaanduiding. Het werk Bomen serie - Nr. 2 is hier niet afgebeeld."
+      }
+    ],
+    "description": "Verhuurprijs per maand: € 2,92.",
+    "category": "Bomen serie"
+  },
+  {
+    "id": "13382674",
+    "slug": "bomen-serie-nr-1",
+    "title": "Bomen serie - Nr. 1",
+    "artist": "Toos Boerlage",
+    "price": 175,
+    "currency": "EUR",
+    "technique": "Mixed Media",
+    "material": "Doek",
+    "dimensionsLabel": "40 × 30 × 4 cm",
+    "year": 2008,
+    "status": "available",
+    "images": [
+      {
+        "src": "assets/img/placeholder.svg",
+        "alt": "Tijdelijke plaatsaanduiding. Het werk Bomen serie - Nr. 1 is hier niet afgebeeld."
+      }
+    ],
+    "description": "Verhuurprijs per maand: € 2,92.",
+    "category": "Bomen serie"
+  },
+  {
+    "id": "13382581",
+    "slug": "cover-boek",
+    "title": "Cover boek",
+    "artist": "Toos Boerlage",
+    "price": 1650,
+    "currency": "EUR",
+    "technique": "Mixed Media",
+    "material": "Doek",
+    "dimensionsLabel": "120 × 80 × 4 cm",
+    "year": 2008,
+    "status": "available",
+    "images": [
+      {
+        "src": "assets/img/placeholder.svg",
+        "alt": "Tijdelijke plaatsaanduiding. Het werk Cover boek is hier niet afgebeeld."
+      }
+    ],
+    "description": "Boek ‘Wat als de ware een broer heeft’, geschreven door Chantal Houwen. Op de cover staat een afbeelding van Z.t. (Nr. 9). Het boek kost € 18,95. Die boekprijs hoort niet bij dit werk; een aanvraag voor het boek loopt per e-mail.",
+    "category": "Opdrachten"
+  },
+  {
+    "id": "13382565",
+    "slug": "buiten-bord",
+    "title": "Buiten bord",
+    "artist": "Toos Boerlage",
+    "currency": "EUR",
+    "technique": "Acryl",
+    "material": "Paneel",
+    "dimensionsLabel": "50 × 150 cm",
+    "year": 2008,
+    "status": "sold",
+    "images": [
+      {
+        "src": "assets/img/placeholder.svg",
+        "alt": "Tijdelijke plaatsaanduiding. Het werk Buiten bord is hier niet afgebeeld."
+      }
+    ],
+    "description": "In opdracht voor 'Stal Zuidoord' te Zuidland.",
+    "category": "Opdrachten"
+  },
+  {
+    "id": "13382566",
+    "slug": "portret-opdracht",
+    "title": "Portret opdracht",
+    "artist": "Toos Boerlage",
+    "currency": "EUR",
+    "technique": "Mixed Media",
+    "material": "Doek",
+    "dimensionsLabel": "80 × 60 × 4 cm",
+    "year": 2008,
+    "status": "sold",
+    "images": [
+      {
+        "src": "assets/img/placeholder.svg",
+        "alt": "Tijdelijke plaatsaanduiding. Het werk Portret opdracht is hier niet afgebeeld."
+      }
+    ],
+    "description": "In opdracht van de Fam. Hoogervorst.",
+    "category": "Opdrachten"
+  },
+  {
+    "id": "13382567",
+    "slug": "portret-opdracht-2",
+    "title": "Portret opdracht",
+    "artist": "Toos Boerlage",
+    "currency": "EUR",
+    "technique": "Mixed Media",
+    "material": "Doek",
+    "dimensionsLabel": "80 × 60 × 4 cm",
+    "year": 2008,
+    "status": "sold",
+    "images": [
+      {
+        "src": "assets/img/placeholder.svg",
+        "alt": "Tijdelijke plaatsaanduiding. Het werk Portret opdracht is hier niet afgebeeld."
+      }
+    ],
+    "description": "In opdracht van de Fam. Hoogervorst.",
+    "category": "Opdrachten"
+  },
+  {
+    "id": "13382569",
+    "slug": "portret-opdracht-3",
+    "title": "Portret opdracht",
+    "artist": "Toos Boerlage",
+    "currency": "EUR",
+    "technique": "Mixed Media",
+    "material": "Doek",
+    "dimensionsLabel": "80 × 60 × 4 cm",
+    "year": 2008,
+    "status": "sold",
+    "images": [
+      {
+        "src": "assets/img/placeholder.svg",
+        "alt": "Tijdelijke plaatsaanduiding. Het werk Portret opdracht is hier niet afgebeeld."
+      }
+    ],
+    "description": "In opdracht van de Fam. Hoogervorst.",
+    "category": "Opdrachten"
+  },
+  {
+    "id": "13382570",
+    "slug": "woonboerderij-te-waarder",
+    "title": "Woonboerderij te Waarder",
+    "artist": "Toos Boerlage",
+    "currency": "EUR",
+    "technique": "Olieverf",
+    "material": "Doek",
+    "dimensionsLabel": "50 × 60 cm",
+    "year": 2008,
+    "status": "sold",
+    "images": [
+      {
+        "src": "assets/img/placeholder.svg",
+        "alt": "Tijdelijke plaatsaanduiding. Het werk Woonboerderij te Waarder is hier niet afgebeeld."
+      }
+    ],
+    "description": "In opdracht van de Hypotheekshop.",
+    "category": "Opdrachten"
+  },
+  {
+    "id": "397751578",
+    "slug": "samira",
+    "title": "Samira",
+    "artist": "Toos Boerlage",
+    "price": 2250,
+    "currency": "EUR",
+    "technique": "Olieverf",
+    "material": "Doek",
+    "dimensionsLabel": "120 × 95 × 2 cm",
+    "year": 2022,
+    "status": "available",
+    "images": [
+      {
+        "src": "assets/img/placeholder.svg",
+        "alt": "Tijdelijke plaatsaanduiding. Het werk Samira is hier niet afgebeeld."
+      }
+    ],
+    "category": "Schilderijen vanaf 2016",
+    "featured": true
+  },
+  {
+    "id": "397755310",
+    "slug": "enjoy",
+    "title": "Enjoy",
+    "artist": "Toos Boerlage",
+    "price": 1650,
+    "currency": "EUR",
+    "technique": "Acryl",
+    "material": "Doek",
+    "dimensionsLabel": "80 × 120 × 4 cm",
+    "year": 2021,
+    "status": "available",
+    "images": [
+      {
+        "src": "assets/img/placeholder.svg",
+        "alt": "Tijdelijke plaatsaanduiding. Het werk Enjoy is hier niet afgebeeld."
+      }
+    ],
+    "category": "Schilderijen vanaf 2016",
+    "featured": true
+  },
+  {
+    "id": "397751800",
+    "slug": "sighisoara",
+    "title": "Sighisoara",
+    "artist": "Toos Boerlage",
+    "currency": "EUR",
+    "technique": "Olieverf",
+    "material": "Doek",
+    "dimensionsLabel": "120 × 100 × 2 cm",
+    "year": 2021,
+    "status": "sold",
+    "images": [
+      {
+        "src": "assets/img/placeholder.svg",
+        "alt": "Tijdelijke plaatsaanduiding. Het werk Sighisoara is hier niet afgebeeld."
+      }
+    ],
+    "category": "Schilderijen vanaf 2016"
+  },
+  {
+    "id": "397752395",
+    "slug": "on-the-road",
+    "title": "On the road",
+    "artist": "Toos Boerlage",
+    "price": 2750,
+    "currency": "EUR",
+    "technique": "Olieverf",
+    "material": "Doek",
+    "dimensionsLabel": "140 × 180 × 2 cm",
+    "year": 2020,
+    "status": "available",
+    "images": [
+      {
+        "src": "assets/img/placeholder.svg",
+        "alt": "Tijdelijke plaatsaanduiding. Het werk On the road is hier niet afgebeeld."
+      }
+    ],
+    "category": "Schilderijen vanaf 2016",
+    "featured": true
+  },
+  {
+    "id": "397753176",
+    "slug": "vergane-glorie",
+    "title": "Vergane glorie",
+    "artist": "Toos Boerlage",
+    "price": 1950,
+    "currency": "EUR",
+    "technique": "Olieverf",
+    "material": "Doek",
+    "dimensionsLabel": "100 × 120 × 2 cm",
+    "year": 2019,
+    "status": "available",
+    "images": [
+      {
+        "src": "assets/img/placeholder.svg",
+        "alt": "Tijdelijke plaatsaanduiding. Het werk Vergane glorie is hier niet afgebeeld."
+      }
+    ],
+    "category": "Schilderijen vanaf 2016",
+    "featured": true
+  },
+  {
+    "id": "397754001",
+    "slug": "candy",
+    "title": "Candy",
+    "artist": "Toos Boerlage",
+    "price": 975,
+    "currency": "EUR",
+    "technique": "Acryl",
+    "material": "Doek",
+    "dimensionsLabel": "70 × 140 × 2 cm",
+    "year": 2018,
+    "status": "available",
+    "images": [
+      {
+        "src": "assets/img/placeholder.svg",
+        "alt": "Tijdelijke plaatsaanduiding. Het werk Candy is hier niet afgebeeld."
+      }
+    ],
+    "category": "Schilderijen vanaf 2016"
+  },
+  {
+    "id": "397753488",
+    "slug": "vuurtoren-hellevoetsluis",
+    "title": "Vuurtoren Hellevoetsluis",
+    "artist": "Toos Boerlage",
+    "price": 1650,
+    "currency": "EUR",
+    "technique": "Acryl",
+    "material": "Doek",
+    "dimensionsLabel": "70 × 140 × 2 cm",
+    "year": 2018,
+    "status": "available",
+    "images": [
+      {
+        "src": "assets/img/placeholder.svg",
+        "alt": "Tijdelijke plaatsaanduiding. Het werk Vuurtoren Hellevoetsluis is hier niet afgebeeld."
+      }
+    ],
+    "category": "Schilderijen vanaf 2016"
+  },
+  {
+    "id": "397755485",
+    "slug": "avondlicht-i",
+    "title": "Avondlicht I",
+    "artist": "Toos Boerlage",
+    "price": 1500,
+    "currency": "EUR",
+    "technique": "Olieverf",
+    "material": "Doek",
+    "dimensionsLabel": "80 × 120 × 4 cm",
+    "year": 2016,
+    "status": "available",
+    "images": [
+      {
+        "src": "assets/img/placeholder.svg",
+        "alt": "Tijdelijke plaatsaanduiding. Het werk Avondlicht I is hier niet afgebeeld."
+      }
+    ],
+    "category": "Schilderijen vanaf 2016"
+  },
+  {
+    "id": "397757967",
+    "slug": "erasmusbrug",
+    "title": "Erasmusbrug",
+    "artist": "Toos Boerlage",
+    "currency": "EUR",
+    "technique": "Mixed Media",
+    "material": "Doek",
+    "dimensionsLabel": "50 × 70 × 2 cm",
+    "year": 2011,
+    "status": "sold",
+    "images": [
+      {
+        "src": "assets/img/placeholder.svg",
+        "alt": "Tijdelijke plaatsaanduiding. Het werk Erasmusbrug is hier niet afgebeeld."
+      }
+    ],
+    "category": "Schilderijen 2009 - 2016"
+  },
+  {
+    "id": "397757820",
+    "slug": "haringvliet-i",
+    "title": "Haringvliet I",
+    "artist": "Toos Boerlage",
+    "price": 795,
+    "currency": "EUR",
+    "technique": "Olieverf",
+    "material": "Doek",
+    "dimensionsLabel": "70 × 100 × 4 cm",
+    "year": 2011,
+    "status": "available",
+    "images": [
+      {
+        "src": "assets/img/placeholder.svg",
+        "alt": "Tijdelijke plaatsaanduiding. Het werk Haringvliet I is hier niet afgebeeld."
+      }
+    ],
+    "category": "Schilderijen 2009 - 2016"
+  },
+  {
+    "id": "397759434",
+    "slug": "landschap",
+    "title": "Landschap",
+    "artist": "Toos Boerlage",
+    "price": 225,
+    "currency": "EUR",
+    "technique": "Olieverf",
+    "material": "Doek",
+    "dimensionsLabel": "40 × 40 cm",
+    "year": 2011,
+    "status": "available",
+    "images": [
+      {
+        "src": "assets/img/placeholder.svg",
+        "alt": "Tijdelijke plaatsaanduiding. Het werk Landschap is hier niet afgebeeld."
+      }
+    ],
+    "category": "Schilderijen 2009 - 2016"
+  },
+  {
+    "id": "397759032",
+    "slug": "abstract",
+    "title": "Abstract",
+    "artist": "Toos Boerlage",
+    "price": 750,
+    "currency": "EUR",
+    "technique": "Olieverf",
+    "material": "Doek",
+    "dimensionsLabel": "80 × 80 × 2 cm",
+    "year": 2010,
+    "status": "available",
+    "images": [
+      {
+        "src": "assets/img/placeholder.svg",
+        "alt": "Tijdelijke plaatsaanduiding. Het werk Abstract is hier niet afgebeeld."
+      }
+    ],
+    "category": "Schilderijen 2009 - 2016"
+  },
+  {
+    "id": "397758557",
+    "slug": "manhattan-iii",
+    "title": "Manhattan III",
+    "artist": "Toos Boerlage",
+    "price": 750,
+    "currency": "EUR",
+    "technique": "Mixed Media",
+    "material": "Doek",
+    "dimensionsLabel": "60 × 120 × 2 cm",
+    "year": 2010,
+    "status": "available",
+    "images": [
+      {
+        "src": "assets/img/placeholder.svg",
+        "alt": "Tijdelijke plaatsaanduiding. Het werk Manhattan III is hier niet afgebeeld."
+      }
+    ],
+    "category": "Schilderijen 2009 - 2016"
+  },
+  {
+    "id": "13380150",
+    "slug": "zonder-titel-nr-19",
+    "title": "Zonder titel (Nr. 19)",
+    "artist": "Toos Boerlage",
+    "price": 1650,
+    "currency": "EUR",
+    "technique": "Mixed Media",
+    "material": "Doek",
+    "dimensionsLabel": "120 × 100 cm",
+    "year": 2008,
+    "status": "available",
+    "images": [
+      {
+        "src": "assets/img/placeholder.svg",
+        "alt": "Tijdelijke plaatsaanduiding. Het werk Zonder titel (Nr. 19) is hier niet afgebeeld."
+      }
+    ],
+    "description": "Verhuurprijs per maand: € 27,50.",
+    "category": "Schilderijen 2008"
+  },
+  {
+    "id": "13380138",
+    "slug": "zonder-titel-nr-18",
+    "title": "Zonder titel (Nr. 18)",
+    "artist": "Toos Boerlage",
+    "price": 1250,
+    "currency": "EUR",
+    "technique": "Mixed Media",
+    "material": "Doek",
+    "dimensionsLabel": "100 × 70 cm",
+    "year": 2008,
+    "status": "available",
+    "images": [
+      {
+        "src": "assets/img/placeholder.svg",
+        "alt": "Tijdelijke plaatsaanduiding. Het werk Zonder titel (Nr. 18) is hier niet afgebeeld."
+      }
+    ],
+    "description": "Verhuurprijs per maand: € 20,83.",
+    "category": "Schilderijen 2008"
+  },
+  {
+    "id": "13380137",
+    "slug": "zonder-titel-nr-17",
+    "title": "Zonder titel (Nr. 17)",
+    "artist": "Toos Boerlage",
+    "price": 495,
+    "currency": "EUR",
+    "technique": "Mixed Media",
+    "material": "Doek",
+    "dimensionsLabel": "60 × 50 cm",
+    "year": 2008,
+    "status": "available",
+    "images": [
+      {
+        "src": "assets/img/placeholder.svg",
+        "alt": "Tijdelijke plaatsaanduiding. Het werk Zonder titel (Nr. 17) is hier niet afgebeeld."
+      }
+    ],
+    "description": "Verhuurprijs per maand: € 8,25.",
+    "category": "Schilderijen 2008"
+  },
+  {
+    "id": "13380013",
+    "slug": "zonder-titel-nr-12",
+    "title": "Zonder titel (Nr. 12)",
+    "artist": "Toos Boerlage",
+    "price": 1650,
+    "currency": "EUR",
+    "technique": "Mixed Media",
+    "material": "Doek",
+    "dimensionsLabel": "100 × 100 × 4 cm",
+    "year": 2008,
+    "status": "available",
+    "images": [
+      {
+        "src": "assets/img/placeholder.svg",
+        "alt": "Tijdelijke plaatsaanduiding. Het werk Zonder titel (Nr. 12) is hier niet afgebeeld."
+      }
+    ],
+    "description": "Verhuurprijs per maand: € 27,50.",
+    "category": "Schilderijen 2008"
+  },
+  {
+    "id": "13380006",
+    "slug": "zonder-titel-nr-11",
+    "title": "Zonder titel (Nr. 11)",
+    "artist": "Toos Boerlage",
+    "price": 1450,
+    "currency": "EUR",
+    "technique": "Mixed Media",
+    "material": "Doek",
+    "dimensionsLabel": "100 × 80 × 4 cm",
+    "year": 2008,
+    "status": "available",
+    "images": [
+      {
+        "src": "assets/img/placeholder.svg",
+        "alt": "Tijdelijke plaatsaanduiding. Het werk Zonder titel (Nr. 11) is hier niet afgebeeld."
+      }
+    ],
+    "description": "Verhuurprijs per maand: € 24,17.",
+    "category": "Schilderijen 2008"
+  },
+  {
+    "id": "13380161",
+    "slug": "zonder-titel-nr-8",
+    "title": "Zonder titel (Nr. 8)",
+    "artist": "Toos Boerlage",
+    "price": 695,
+    "currency": "EUR",
+    "technique": "Mixed Media",
+    "material": "Doek",
+    "dimensionsLabel": "80 × 60 × 4 cm",
+    "year": 2007,
+    "status": "available",
+    "images": [
+      {
+        "src": "assets/img/placeholder.svg",
+        "alt": "Tijdelijke plaatsaanduiding. Het werk Zonder titel (Nr. 8) is hier niet afgebeeld."
+      }
+    ],
+    "description": "Verhuurprijs per maand: € 11,58.",
+    "category": "Schilderijen 2007"
+  },
+  {
+    "id": "13380183",
+    "slug": "zonder-titel-nr-6",
+    "title": "Zonder titel (Nr. 6)",
+    "artist": "Toos Boerlage",
+    "price": 695,
+    "currency": "EUR",
+    "technique": "Mixed Media",
+    "material": "Doek",
+    "dimensionsLabel": "80 × 60 × 4 cm",
+    "year": 2007,
+    "status": "available",
+    "images": [
+      {
+        "src": "assets/img/placeholder.svg",
+        "alt": "Tijdelijke plaatsaanduiding. Het werk Zonder titel (Nr. 6) is hier niet afgebeeld."
+      }
+    ],
+    "description": "Verhuurprijs per maand: € 11,58.",
+    "category": "Schilderijen 2007"
+  },
+  {
+    "id": "13382515",
+    "slug": "zonder-titel-nr-5",
+    "title": "Zonder titel (Nr. 5)",
+    "artist": "Toos Boerlage",
+    "price": 1650,
+    "currency": "EUR",
+    "technique": "Mixed Media",
+    "material": "Doek",
+    "dimensionsLabel": "120 × 80 × 4 cm",
+    "year": 2007,
+    "status": "available",
+    "images": [
+      {
+        "src": "assets/img/placeholder.svg",
+        "alt": "Tijdelijke plaatsaanduiding. Het werk Zonder titel (Nr. 5) is hier niet afgebeeld."
+      }
+    ],
+    "description": "Verhuurprijs per maand: € 27,50.",
+    "category": "Schilderijen 2007"
+  },
+  {
+    "id": "13382516",
+    "slug": "zonder-titel-nr-3",
+    "title": "Zonder titel (Nr. 3)",
+    "artist": "Toos Boerlage",
+    "price": 795,
+    "currency": "EUR",
+    "technique": "Mixed Media",
+    "material": "Doek",
+    "dimensionsLabel": "80 × 80 × 4 cm",
+    "year": 2007,
+    "status": "available",
+    "images": [
+      {
+        "src": "assets/img/placeholder.svg",
+        "alt": "Tijdelijke plaatsaanduiding. Het werk Zonder titel (Nr. 3) is hier niet afgebeeld."
+      }
+    ],
+    "description": "Verhuurprijs per maand: € 13,25.",
+    "category": "Schilderijen 2007"
+  },
+  {
+    "id": "13382560",
+    "slug": "zonder-titel-nr-2",
+    "title": "Zonder titel (Nr. 2)",
+    "artist": "Toos Boerlage",
+    "price": 795,
+    "currency": "EUR",
+    "technique": "Mixed Media",
+    "material": "Doek",
+    "dimensionsLabel": "80 × 80 × 4 cm",
+    "year": 2007,
+    "status": "available",
+    "images": [
+      {
+        "src": "assets/img/placeholder.svg",
+        "alt": "Tijdelijke plaatsaanduiding. Het werk Zonder titel (Nr. 2) is hier niet afgebeeld."
+      }
+    ],
+    "description": "Verhuurprijs per maand: € 13,25.",
+    "category": "Schilderijen 2007"
+  },
+  {
+    "id": "13382522",
+    "slug": "zonder-titel",
+    "title": "Zonder titel",
+    "artist": "Toos Boerlage",
+    "price": 4250,
+    "currency": "EUR",
+    "technique": "Olieverf",
+    "material": "Doek",
+    "dimensionsLabel": "120 × 100 cm",
+    "year": 2007,
+    "status": "available",
+    "images": [
+      {
+        "src": "assets/img/placeholder.svg",
+        "alt": "Tijdelijke plaatsaanduiding. Het werk Zonder titel is hier niet afgebeeld."
+      }
+    ],
+    "category": "Schilderijen 2007"
+  }
+]

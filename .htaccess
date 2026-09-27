@@ -3,7 +3,16 @@ Options -Indexes
 <IfModule mod_rewrite.c>
     RewriteEngine On
     RewriteRule ^(includes|database|archives|game|\.cursor|\.tools)(/|$) - [F,L]
-    RewriteRule ^(README\.md|\.gitignore)$ - [F,L]
+    RewriteRule ^(README\.md|\.gitignore|router\.php)$ - [F,L]
+
+    RewriteRule ^kunstwerken/?$ kunstwerken.php [L,QSA]
+    RewriteRule ^kunstwerken/([a-z0-9-]+)/?$ kunstwerk.php?slug=$1 [L,QSA]
+    RewriteRule ^afrekenen/?$ afrekenen.php [L,QSA]
+    RewriteRule ^over/?$ over.php [L,QSA]
+    RewriteRule ^opdrachten/?$ opdrachten.php [L,QSA]
+    RewriteRule ^contact/?$ contact.php [L,QSA]
+
+    ErrorDocument 404 /404.php
 </IfModule>
 
 SetEnvIf Request_URI "^/play/" play_assets
